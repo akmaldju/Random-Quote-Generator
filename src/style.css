@@ -1,12 +1,11 @@
 body {
   background-color: #00FA9A;
   padding-bottom: 8px;
-  font-family: 'Pangolin', cursive;
+  font-family: 'Bellota Text', cursive;
 }
 
 h1 {
-  font-size: 500%;
-  font-size: 3.4vw;
+  font-size: 4.4rem;
 }
 
 h2, h2 a {
@@ -34,20 +33,18 @@ h2, h2 a {
 
 #quote {
   border: 2px solid green;
-  border-radius: 10px;
+  border-radius: 4px;
   background-color: #fff766;
   min-width: 270px;
   max-width: 500px;
-  width: 50%;
   min-height: 270px;
-  max-height: 500px;
-  margin-top: 5%;
+  margin-top: 5rem;
   margin-bottom: 10px;
-  padding: 3%;
+  padding: 2rem;
 }
 
 #quote p, h5 {
-  font-size: 300%;
+  font-size: 2.5rem;
 }
 
 #quote h5 {
@@ -56,10 +53,9 @@ h2, h2 a {
 }
 
 #buttons {
-  width: 90%;
   border: 0px solid green;
   min-height: 50px;
-  margin: 25px auto -10px auto;
+  margin: 25px auto 0 auto;
 }
 
 #buttons #tweet, #fb {
@@ -89,7 +85,7 @@ h2, h2 a {
 #footer {
   position: relative;
   bottom: 5px;
-  font-size: 1.7vw;
+  font-size: 1.9rem;
 }
 
 #footer a {
