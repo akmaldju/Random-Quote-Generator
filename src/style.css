@@ -1,35 +1,38 @@
-body{
+body {
   background-color: #00FA9A;
   padding-bottom: 8px;
   font-family: 'Pangolin', cursive;
 }
-h1{
+
+h1 {
   font-size: 500%;
   font-size: 3.4vw;
 }
-h2, h2 a{
+
+h2, h2 a {
   color: black;
   font-size: 200%;
   font-size: 35px;
   font-size: 2.4vw;
-  
 }
-#set{
-   border: 0px solid red;
-   width: 40px;
-   font-size: 15px;
-   font-weight: bold;
-   position: fixed;
-   right: 5px;
-   margin-top: 5px;
+
+#set {
+  border: 0px solid red;
+  width: 40px;
+  font-size: 15px;
+  font-weight: bold;
+  position: fixed;
+  right: 5px;
+  margin-top: 5px;
 }
-#wrapper{
+
+#wrapper {
   border: 0px solid red;
   width: 70%;
   min-height: 90vh;
 }
 
-#quote{
+#quote {
   border: 2px solid green;
   border-radius: 10px;
   background-color: #fff766;
@@ -42,22 +45,24 @@ h2, h2 a{
   margin-bottom: 10px;
   padding: 3%;
 }
-#quote p, h5{
+
+#quote p, h5 {
   font-size: 300%;
 }
 
-#quote h5{
+#quote h5 {
   font-weight: bold;
   font-size: 330%;
 }
 
-#buttons{
+#buttons {
   width: 90%;
   border: 0px solid green;
   min-height: 50px;
   margin: 25px auto -10px auto;
 }
-#buttons #tweet, #fb{
+
+#buttons #tweet, #fb {
   height: 50px;
   padding-top: 15px;
   border: 0px solid green;
@@ -68,28 +73,29 @@ h2, h2 a{
   margin: 2px;
 }
 
-#newquote{
+#newquote {
   height: 50px;
   border: 2px solid green;
-  border-radius: 10px;
-  //background-color: #fff766;
+  border-radius: 10px; //background-color: #fff766;
   margin-right: 0;
   padding-top: 4px;
   float: right;
 }
-#newquote{
+
+#newquote {
   font-size: 80%;
 }
 
-#footer{
+#footer {
   position: relative;
   bottom: 5px;
   font-size: 1.7vw;
-} 
-#footer a{
-  color: black;
-}
-.clear{
-  clear: both;
 }
 
+#footer a {
+  color: black;
+}
+
+.clear {
+  clear: both;
+}
