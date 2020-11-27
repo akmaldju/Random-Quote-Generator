@@ -1,27 +1,29 @@
 var lang = "en";
 var colors = ["#009688", "#00BCD4", "#3F51B5", "#673AB7", "#9C27B0", "#DB4437", "#FF9800", "#00BCD4", "#00FA9A"];
 $(document).ready(function () {
+  console.log('ready');
   $.getJSON("https://api.forismatic.com/api/1.0/?method=getQuote&lang=" + lang + "&format=jsonp&jsonp=?")
     .done(update).fail(handleErr);
-});
 
-$('#newquote').click(function () {
-  $.getJSON("https://api.forismatic.com/api/1.0/?method=getQuote&lang=" + lang + "&format=jsonp&jsonp=?")
-    .done(update).fail(handleErr);
-});
+  $('#newquote').click(function () {
+    console.log('Click');
+    $.getJSON("https://api.forismatic.com/api/1.0/?method=getQuote&lang=" + lang + "&format=jsonp&jsonp=?")
+      .done(update).fail(handleErr);
+  });
 
-$('#set a').click(function () {
-  if (lang == "en") {
-    lang = "ru";
-    $('#set a').text('ENG');
-  }
-  else {
-    lang = "en";
-    $('#set a').text('RUS');
-  }
-
-  $.getJSON("https://api.forismatic.com/api/1.0/?method=getQuote&lang=" + lang + "&format=jsonp&jsonp=?")
-    .done(update).fail(handleErr);
+  $('#set a').click(function () {
+    if (lang == "en") {
+      lang = "ru";
+      $('#set a').text('ENG');
+    }
+    else {
+      lang = "en";
+      $('#set a').text('RUS');
+    }
+  
+    $.getJSON("https://api.forismatic.com/api/1.0/?method=getQuote&lang=" + lang + "&format=jsonp&jsonp=?")
+      .done(update).fail(handleErr);
+  });
 });
 
 function update(quote) {
