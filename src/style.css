@@ -76,7 +76,7 @@ h2, h2 a {
 #newquote {
   height: 50px;
   border: 2px solid green;
-  border-radius: 10px; //background-color: #fff766;
+  border-radius: 10px; 
   margin-right: 0;
   padding-top: 4px;
   float: right;
