@@ -1,7 +1,8 @@
 body {
   background-color: #00FA9A;
   padding-bottom: 8px;
-  font-family: 'Bellota Text', cursive;
+  font-family: 'Montserrat', serif;
+  font-size: 2.5rem;
 }
 
 h1 {
@@ -53,13 +54,14 @@ h2, h2 a {
   flex-direction: column;
 }
 
-#quote p, h5 {
+#quote p {
   font-size: 2.5rem;
+  font-family: 'Bellota Text', cursive;
 }
 
 #quote h5 {
   font-weight: bold;
-  font-size: 330%;
+  font-size: 3.3rem;
 }
 
 #buttons {
@@ -84,7 +86,7 @@ h2, h2 a {
   border: 2px solid green;
   border-radius: 4px;
   margin-right: 0;
-  padding-top: 4px;
+  padding: 0.4rem 3rem;
   float: right;
 }
 
