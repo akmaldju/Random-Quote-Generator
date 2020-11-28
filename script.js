@@ -1,14 +1,14 @@
 const colors = ['#009688', '#00BCD4', '#3F51B5', '#673AB7', '#9C27B0', '#DB4437', '#FF9800', '#00BCD4', '#00FA9A'];
 
 let lang = 'en';
-let forismaticUrl = `https://api.forismatic.com/api/1.0/?method=getQuote&lang=${lang}&format=jsonp&jsonp=?`;
+const forismaticUrl = (lang) => `https://api.forismatic.com/api/1.0/?method=getQuote&lang=${lang}&format=jsonp&jsonp=?`;
 
 $(document).ready(() => {
-  $.getJSON(forismaticUrl)
+  $.getJSON(forismaticUrl(lang))
     .done(update).fail(handleErr);
 
   $('#newquote').click(() => {
-    $.getJSON(forismaticUrl)
+    $.getJSON(forismaticUrl(lang))
       .done(update).fail(handleErr);
   });
 
@@ -22,7 +22,7 @@ $(document).ready(() => {
       $('#set a').text('RUS');
     }
   
-    $.getJSON(forismaticUrl)
+    $.getJSON(forismaticUrl(lang))
       .done(update).fail(handleErr);
   });
 });
