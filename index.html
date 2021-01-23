@@ -1,50 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Life+Savers&family=Bellota+Text&family=Montserrat"
+    />
+    <link
+      rel="stylesheet"
+      href="https://freedom-e21nmbt7y.vercel.app/freedom.min.css"
+    />
+    <link rel="stylesheet" href="dist/styles.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <title>Random Quote Generator</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Life+Savers&family=Bellota+Text&family=Montserrat" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css">
-  <link rel="stylesheet" href="style.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="script.js"></script>
-  <title>Random Quote Generator</title>
-</head>
-
-<body>
-  <div id="set">
-    <a href="#">RUS</a>
-  </div>
-  <div id="content" class="content-fluid">
-    <div id="wrapper" class="center-block">
-      <h1 class="text-center">Random Quote Generator</h1>
-      <!--   <h2 class="text-center">by <a href="https://www.freecodecamp.org/akmaldju">Akmal Djumakhodjaev</a></h2> -->
-      <div id="quoteWrapper" class="center-block">
-        <div id="quote" class="center-block">
-          <p id="thetarget" class="text-center"></p>
-          <h5 class="text-right"></h5>
-          <div id="buttons" class="center-block">
-            <!-- <div id="tweet"><a style="width: 550px" class="twitter-share-button"
-                href="https://twitter.com/intent/tweet?text=Hello%20world" data-size="large">
-              </a></div> -->
-            <!--<div id="fb"></div>
-        <form  action="/http://api.forismatic.com/api/1.0/?getQuote&key=457653&format=xml&lang=en" method="GET">
-        <input type="submit" value="New Quote" id="newquote" class="btn-primary text-center" /></form>-->
-            <button id="newquote" class="btn-primary">
-              <span>New Quote</span>
-            </button>
+  <body>
+    <div id="set" class="pos-fixed right-5 top-5 bold">
+      <a href="#">RUS</a>
+    </div>
+    <div id="content" class="d-flex">
+      <div
+        id="wrapper"
+        class="d-flex flex-column jc-space-between h-min-97-vh m-auto"
+      >
+        <h2 class="h2 text-center">Random Quote Generator</h2>
+        <div id="quoteWrapper" class="d-flex flex-column jc-flex-end m-auto">
+          <div
+            id="quote"
+            class="d-flex flex-column w-70 b-2 b-green b-material bg-khaki m-auto p-6"
+          >
+            <p id="thetarget" class="text-center t-29-px my-0"></p>
+            <h3 class="h3 text-right mt-1 noline"></h3>
+            <div id="buttons" class="m-auto">
+              <button
+                id="newquote"
+                class="btn-cornsilk b-2 b-green b-material bg-lightblue-hover t-20-px py-2 px-8"
+              >
+                <span>New Quote</span>
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-      <div id="footer">
-        <a href="https://www.freecodecamp.org/akmaldju">
-          <p class="text-center">Design by Akmal Djumakhodjaev &copy2017</p>
-        </a>
+        <div id="footer">
+          <a href="https://akmal.now.sh" class="noline">
+            <p class="t-black text-center t-19-px">
+              Design by Akmal Djumakhodjaev &copy2017
+            </p>
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>

@@ -21,7 +21,7 @@ $(document).ready(() => {
       lang = 'en';
       $('#set a').text('RUS');
     }
-  
+
     $.getJSON(forismaticUrl(lang))
       .done(update).fail(handleErr);
   });
@@ -30,15 +30,11 @@ $(document).ready(() => {
 const update = (quote) => {
   const quoteText = JSON.stringify(quote.quoteText).replaceAll('"', '');
   const quoteAuthor = JSON.stringify(quote.quoteAuthor).replaceAll('"', '');
-  
+
   $('body').css('background-color', colors[Math.round(Math.random() * 8) + 1]);
   $('#thetarget').html(quoteText);
-  $('#quote h5').html(`${quoteAuthor === '' ? '' : (`-  <a href='https://www.google.com/search?q=${quoteAuthor}' target='_blank'>${quoteAuthor}</a>`)}`);
+  $('#quote h3').html(`${quoteAuthor === '' ? '' : (`-  <a href='https://www.google.com/search?q=${quoteAuthor}' target='_blank' class='noline t-dodgerblue'>${quoteAuthor}</a>`)}`);
 
-  /*$('#tweet').html('<a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=' + JSON.stringify(quote.quoteText) + ' -' + JSON.stringify(quote.quoteAuthor) +'" data-size="large"></a>');
-    $('#tweet').html(
-      '<a class=\"twitter-share-button\" href=\"https://twitter.com/intent/tweet?text=' + JSON.stringify(quote.quoteText) + '\" data-size=\"large\"></a>'
-    );*/
   let message = `${quoteText}   -  ${quoteAuthor}`;
   $('#tweet').html(
     `<a class='twitter-share-button' href='https://twitter.com/intent/tweet?text=${message} data-size='large'></a>`
