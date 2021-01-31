@@ -13,20 +13,28 @@
     />
     <link rel="stylesheet" href="dist/styles.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/f5bc3ddc16.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="script.js"></script>
-    <title>Random Quote Generator</title>
+    <title>Random Quote Generator by Akmal Djumakhodjaev</title>
   </head>
 
-  <body>
-    <div id="set" class="pos-fixed right-5 top-5 bold">
-      <a href="#">RUS</a>
-    </div>
-    <div id="content" class="d-flex">
-      <div
-        id="wrapper"
-        class="d-flex flex-column jc-space-between h-min-97-vh m-auto"
+  <body class="h-min-100-vh d-flex f-column">
+    <header class="d-flex jc-space-between bg-black p-4">
+      <h3 class="h3 t-forestgreen t-darkseagreen-hover my-auto">
+        Random Quote Generator
+      </h3>
+      <a
+        href="#"
+        id="set"
+        class="btn btn-forestgreen hover-pulse bold noline t-floralwhite"
+        >RUS</a
       >
-        <h2 class="h2 text-center">Random Quote Generator</h2>
+    </header>
+    <div id="content" class="d-flex f-column f-grow-1">
+      <div id="wrapper" class="d-flex flex-column jc-space-between m-auto">
         <div id="quoteWrapper" class="d-flex flex-column jc-flex-end m-auto">
           <div
             id="quote"
@@ -37,21 +45,72 @@
             <div id="buttons" class="m-auto">
               <button
                 id="newquote"
-                class="btn-cornsilk b-2 b-green b-material bg-lightblue-hover t-20-px py-2 px-8"
+                class="btn-cornsilk b-2 b-green b-material bg-lightblue-hover hover-pop t-20-px py-2 px-8 mt-4"
               >
                 <span>New Quote</span>
               </button>
             </div>
           </div>
         </div>
-        <div id="footer">
-          <a href="https://akmal.now.sh" class="noline">
-            <p class="t-black text-center t-19-px">
-              Design by Akmal Djumakhodjaev &copy2017
-            </p>
-          </a>
-        </div>
       </div>
+      <footer class="bg-black t-darkgray py-4">
+        <ul class="pb-4 d-flex jc-center">
+          <li>
+            <a
+              href="https://www.facebook.com/akmal.djumakhodjaev"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-facebook-square"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/akmal-djumakhodjaev/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/akmaldju"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-github-square"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/akmaldju/"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="skype:akmaldju?userinfo"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-skype"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://t.me/akmal_djumakhodjaev"
+              target="_blank"
+              rel="noopener noreferrer"
+              ><i class="fab fa-telegram"></i
+            ></a>
+          </li>
+        </ul>
+        <p class="text-center t-19-px">
+          &copy2017 | Design by
+          <a href="https://akmal.now.sh" class="noline t-darkgray t-info-hover"
+            >Akmal Djumakhodjaev</a
+          >
+        </p>
+      </footer>
     </div>
   </body>
 </html>

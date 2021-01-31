@@ -12,14 +12,14 @@ $(document).ready(() => {
       .done(update).fail(handleErr);
   });
 
-  $('#set a').click(() => {
+  $('#set').click(() => {
     if (lang == 'en') {
       lang = 'ru';
-      $('#set a').text('ENG');
+      $('#set').text('ENG');
     }
     else {
       lang = 'en';
-      $('#set a').text('RUS');
+      $('#set').text('RUS');
     }
 
     $.getJSON(forismaticUrl(lang))
