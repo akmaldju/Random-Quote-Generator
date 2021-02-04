@@ -16,10 +16,12 @@ $(document).ready(() => {
     if (lang == 'en') {
       lang = 'ru';
       $('#set').text('ENG');
+      $('#newquote span').text('Новая Цитата');
     }
     else {
       lang = 'en';
       $('#set').text('RUS');
+      $('#newquote span').text('New Quote');
     }
 
     $.getJSON(forismaticUrl(lang))
