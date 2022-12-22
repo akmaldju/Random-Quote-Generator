@@ -1,7 +1,6 @@
 # Random Quote Generator
 
 A Pen created on CodePen.io. Original URL: [https://codepen.io/akmaldju/pen/ZaRNvM](https://codepen.io/akmaldju/pen/ZaRNvM).
- Random Quote Generator
 
 This is a simple webpage that generates and displays random quotes to the user. The page includes a button for the user to generate a new quote, and a language toggle button to switch between languages. The page also includes social media links in the footer.
 
